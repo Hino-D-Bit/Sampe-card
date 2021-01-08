@@ -8,17 +8,10 @@ import { AppRoutingModule } from "../app-routing.module";
 import { RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { InfoboxComponent } from "./infobox/infobox.component";
-import { CardComponent } from "./home/card/card.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, RouterModule, AppRoutingModule],
-  declarations: [
-    AppComponent,
-    HelloComponent,
-    InfoboxComponent,
-    HomeComponent,
-    CardComponent
-  ],
+  declarations: [AppComponent, HelloComponent, InfoboxComponent, HomeComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
