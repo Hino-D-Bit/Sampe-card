@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { AppComponent } from "../app.component";
+import { HomeComponent } from "../home/home.component";
 
 @Component({
   selector: "app-infobox",
@@ -9,13 +9,13 @@ import { AppComponent } from "../app.component";
 export class InfoboxComponent implements OnInit {
   lightTheme: boolean;
 
-  constructor(private appComponent: AppComponent) {}
+  constructor(private homeComponent: HomeComponent) {}
 
   ngOnInit() {
-    this.lightTheme = this.appComponent.lightTheme;
+    this.lightTheme = this.homeComponent.lightTheme;
   }
 
   changeTheme(event) {
-    this.appComponent.changeTheme(event);
+    this.homeComponent.changeTheme(event);
   }
 }
